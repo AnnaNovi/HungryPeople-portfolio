@@ -6,15 +6,15 @@
   src: url(./resrc/BannyBR.woff) format("woff"), url(./resrc/BannyBR.ttf) format("truetype"), url(./resrc/BannyBR.svg) format("svg"); }
 
 body {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .container#home {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./resrc/fish.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: none;
-  min-width: 750px; }
+  margin: none; }
   .container#home .nav {
     display: flex;
     flex-direction: row;
@@ -23,8 +23,8 @@ body {
     text-transform: uppercase;
     max-width: 1280px;
     padding-top: 50px;
-    margin-left: 81px;
-    margin-right: 80px; }
+    margin-left: auto;
+    margin-right: auto; }
     .container#home .nav a {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
@@ -40,14 +40,15 @@ body {
     .container#home .nav img {
       margin-top: -25px; }
   .container#home .content {
+    max-width: 1280px;
     padding-bottom: 82px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 81px;
-    margin-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 151px; }
     .container#home .content .time {
       font-family: 'Open Sans', sans-serif;
@@ -127,28 +128,29 @@ body {
     opacity: 0.8;
     outline: none; }
 
-.container#aboutus {
-  min-width: 750px; }
-  .container#aboutus .content {
-    margin: 100px 79px 100px 81px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative; }
-    .container#aboutus .content .img {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-      background-image: url(./resrc/fire.jpeg);
-      min-width: 475px;
-      margin-left: 80px;
-      margin-right: 125px; }
+.container#aboutus .content {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1280px; }
+  .container#aboutus .content .img {
+    height: 475px;
+    width: 475px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    background-image: url(./resrc/fire.jpeg);
+    min-width: 475px;
+    margin-right: 10%; }
+  .container#aboutus .content .text {
+    margin-right: 80px;
+    margin-left: 100px; }
     .container#aboutus .content .text h1 {
       font-family: 'BannyBR';
       font-size: 36px;
@@ -179,23 +181,22 @@ body {
       line-height: 24px;
       text-align: center;
       color: black; }
-    .container#aboutus .content .square {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      border: 20px solid #E8C300;
-      box-sizing: border-box;
-      filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-      border-radius: 5px;
-      right: 0px; }
+  .container#aboutus .content .square {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    right: 0; }
 
 .container#ourteam {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./resrc/food.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: none;
-  min-width: 750px; }
+  margin: none; }
   .container#ourteam h2 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -209,13 +210,14 @@ body {
     padding-top: 45px;
     margin-bottom: -50px; }
   .container#ourteam .content {
-    margin: 100px 79px 100px 81px;
+    margin: 100px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: relative;
+    max-width: 1280px;
     flex-direction: row-reverse;
     padding-bottom: 100px; }
     .container#ourteam .content .img {
@@ -265,28 +267,27 @@ body {
         text-align: center;
         color: rgba(255, 255, 255, 0.9); }
 
-.container#book {
-  min-width: 750px; }
-  .container#book .content {
-    margin: 100px 79px 100px 81px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative; }
-    .container#book .content .img {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-      background-image: url(./resrc/clock.jpeg);
-      min-width: 475px;
-      margin-left: 80px;
-      margin-right: 125px; }
+.container#book .content {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1280px; }
+  .container#book .content .img {
+    height: 475px;
+    width: 475px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    background-image: url(./resrc/clock.jpeg);
+    min-width: 475px; }
+  .container#book .content .text {
+    margin-right: 80px; }
     .container#book .content .text h1 {
       font-family: 'BannyBR';
       font-size: 36px;
@@ -302,73 +303,84 @@ body {
       margin: auto auto;
       margin-top: -15px;
       margin-bottom: 20px; }
-    .container#book .content .text form {
-      text-align: center; }
-      .container#book .content .text form input {
-        width: 277px;
-        height: 60px;
-        background: #E5E5E5;
-        border-radius: 5px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        border: none;
-        padding-left: 20px;
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 19px;
-        align-items: center;
-        color: black; }
-      .container#book .content .text form input:active, .container#book .content .text form input:focus {
-        outline: none; }
-      .container#book .content .text form button {
-        background: #E8C300;
-        border-radius: 5px;
-        height: 60px;
-        width: 564px;
-        margin-left: -10px;
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 20px;
-        align-items: center;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        border: none; }
-      .container#book .content .text form button:active, .container#book .content .text form button:hover {
-        opacity: 0.8;
-        outline: none; }
-      .container#book .content .text form ::placeholder {
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 19px;
-        align-items: center;
-        color: rgba(51, 51, 51, 0.5); }
-    .container#book .content .square {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      border: 20px solid #E8C300;
-      box-sizing: border-box;
-      filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    .container#book .content .text form input {
+      height: 60px;
+      background: #E5E5E5;
       border-radius: 5px;
-      right: 0px; }
-  .container#book .textbot {
-    text-align: center;
-    margin-top: -70px;
-    padding-bottom: 20px; }
-    .container#book .textbot p {
+      margin-bottom: 10px;
+      border: none;
+      padding-left: 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      align-items: center;
+      color: black; }
+    .container#book .content .text form input:active, .container#book .content .text form input:focus {
+      outline: none; }
+    .container#book .content .text form .book_column_list {
+      text-align: center;
+      column-count: 2;
+      -moz-column-count: 2;
+      -webkit-column-count: 2; }
+      .container#book .content .text form .book_column_list .book_column {
+        display: flex;
+        width: 277px;
+        column-gap: 10px; }
+    .container#book .content .text form button {
+      background: #E8C300;
+      border-radius: 5px;
+      height: 60px;
+      width: 100%;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 20px;
+      align-items: center;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      border: none; }
+    .container#book .content .text form button:active, .container#book .content .text form button:hover {
+      opacity: 0.8;
+      outline: none; }
+    .container#book .content .text form ::placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      align-items: center;
+      color: rgba(51, 51, 51, 0.5); }
+  .container#book .content .square {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    right: 0px; }
+
+.container#book .textbot {
+  margin-top: -70px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .container#book .textbot .contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .container#book .textbot .contacts p {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 12px;
       color: rgba(51, 51, 51, 0.5); }
-      .container#book .textbot p span {
+      .container#book .textbot .contacts p span {
         font-weight: bold; }
 
 .container#specialties {
@@ -376,9 +388,8 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: none;
-  min-width: 750px; }
-  .container#specialties .content .text h2 {
+  margin: none; }
+  .container#specialties h2 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -388,205 +399,107 @@ body {
     letter-spacing: 0.5em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 45px;
-    margin-bottom: -50px; }
-  .container#specialties .content .description .block#one .mix {
-    margin: 100px 79px 100px 81px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    flex-direction: row-reverse; }
-    .container#specialties .content .description .block#one .mix h1 {
-      font-family: 'BannyBR';
-      font-size: 36px;
-      line-height: 48px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #ffffff; }
-    .container#specialties .content .description .block#one .mix .yellow-line {
-      width: 60px;
-      height: 5.11px;
-      background: #E8C300;
-      border-radius: 50px;
-      margin: auto auto;
-      margin-top: -15px; }
-    .container#specialties .content .description .block#one .mix p.br {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 28px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9); }
-    .container#specialties .content .description .block#one .mix p {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9); }
-    .container#specialties .content .description .block#one .mix .img {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url(./resrc/cake.jpg);
-      min-width: 475px;
-      filter: drop-shadow(0px 0px 50px #000000);
-      margin-left: 125px;
-      margin-right: 80px; }
-    .container#specialties .content .description .block#one .mix .square {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      border: 20px solid #E8C300;
-      box-sizing: border-box;
-      filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-      border-radius: 5px;
-      left: 0px; }
-  .container#specialties .content .description .block#two .mix {
-    margin: 100px 79px 100px 81px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    flex-direction: row-reverse; }
-    .container#specialties .content .description .block#two .mix h1 {
-      font-family: 'BannyBR';
-      font-size: 36px;
-      line-height: 48px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #ffffff; }
-    .container#specialties .content .description .block#two .mix .yellow-line {
-      width: 60px;
-      height: 5.11px;
-      background: #E8C300;
-      border-radius: 50px;
-      margin: auto auto;
-      margin-top: -15px; }
-    .container#specialties .content .description .block#two .mix p.br {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 28px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9); }
-    .container#specialties .content .description .block#two .mix p {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9); }
-    .container#specialties .content .description .block#two .mix .img {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url(./resrc/ice.png);
-      min-width: 475px;
-      filter: drop-shadow(0px 0px 50px #000000);
-      margin-left: 125px;
-      margin-right: 80px; }
-    .container#specialties .content .description .block#two .mix .square {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      border: 20px solid #E8C300;
-      box-sizing: border-box;
-      filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-      border-radius: 5px;
-      left: 0px; }
-  .container#specialties .content .description .block#three .mix {
-    margin: 100px 79px 100px 81px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    flex-direction: row-reverse; }
-    .container#specialties .content .description .block#three .mix h1 {
-      font-family: 'BannyBR';
-      font-size: 36px;
-      line-height: 48px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #ffffff; }
-    .container#specialties .content .description .block#three .mix .yellow-line {
-      width: 60px;
-      height: 5.11px;
-      background: #E8C300;
-      border-radius: 50px;
-      margin: auto auto;
-      margin-top: -15px; }
-    .container#specialties .content .description .block#three .mix p.br {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 28px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9); }
-    .container#specialties .content .description .block#three .mix p {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9); }
-    .container#specialties .content .description .block#three .mix .img {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url(./resrc/eggs.jpg);
-      min-width: 475px;
-      filter: drop-shadow(0px 0px 50px #000000);
-      margin-left: 125px;
-      margin-right: 80px; }
-    .container#specialties .content .description .block#three .mix .square {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      border: 20px solid #E8C300;
-      box-sizing: border-box;
-      filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-      border-radius: 5px;
-      left: 0px; }
-  .container#specialties .content .selector {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: -50px;
-    padding-bottom: 45px; }
-    .container#specialties .content .selector a {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.5); }
-    .container#specialties .content .selector a.two {
-      margin-left: 20px;
-      margin-right: 20px; }
-    .container#specialties .content .selector a:hover, .container#specialties .content .selector a:active {
-      background: #FFFFFF; }
+    padding-top: 45px; }
+  .container#specialties .content {
+    margin: 100px auto;
+    margin-top: -70px; }
+    .container#specialties .content .description .slick-track {
+      display: flex;
+      justify-content: center; }
+    .container#specialties .content .description .slick-list {
+      overflow: hidden; }
+    .container#specialties .content .description .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .container#specialties .content .description .slick-dots li {
+        list-style: none;
+        margin-bottom: 45px; }
+        .container#specialties .content .description .slick-dots li button {
+          font-size: 0;
+          width: 12px;
+          height: 12px;
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          margin: 0px 20px; }
+        .container#specialties .content .description .slick-dots li.slick-active button {
+          background: #FFFFFF; }
+        .container#specialties .content .description .slick-dots li button:active, .container#specialties .content .description .slick-dots li button:hover {
+          background: #FFFFFF; }
+    .container#specialties .content .description .slick-arrow {
+      visibility: hidden; }
+    .container#specialties .content .description .mix {
+      margin: 100px auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      max-width: 1280px;
+      margin-bottom: 0px;
+      flex-direction: row-reverse;
+      outline: none; }
+      .container#specialties .content .description .mix .text {
+        margin-right: 100px; }
+      .container#specialties .content .description .mix h1 {
+        font-family: 'BannyBR';
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff; }
+      .container#specialties .content .description .mix .yellow-line {
+        width: 60px;
+        height: 5.11px;
+        background: #E8C300;
+        border-radius: 50px;
+        margin: auto auto;
+        margin-top: -15px; }
+      .container#specialties .content .description .mix p.br {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9); }
+      .container#specialties .content .description .mix p {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9); }
+      .container#specialties .content .description .mix .img {
+        height: 475px;
+        width: 475px;
+        border-radius: 5px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 475px;
+        filter: drop-shadow(0px 0px 50px #000000);
+        margin-left: 125px;
+        margin-right: 80px; }
+        .container#specialties .content .description .mix .img.cake {
+          background-image: url(./resrc/cake.jpg); }
+        .container#specialties .content .description .mix .img.pancakes {
+          background-image: url(./resrc/ice.png); }
+        .container#specialties .content .description .mix .img.eggs {
+          background-image: url(./resrc/eggs.jpg); }
+      .container#specialties .content .description .mix .square {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border: 20px solid #E8C300;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+        border-radius: 5px;
+        left: 0px; }
 
 .container#menu .content {
   margin: 100px 79px 100px 81px;
@@ -634,7 +547,7 @@ body {
       color: #333333;
       text-decoration: none; }
     .container#menu .content .navmenu a:hover, .container#menu .content .navmenu a:active {
-      color: black; }
+      color: #E8C300; }
     .container#menu .content .navmenu .vert-line {
       width: 50px;
       height: 0px;
@@ -646,6 +559,11 @@ body {
     line-height: 18px;
     color: #333333;
     text-transform: uppercase; }
+  .container#menu .content .menu .space {
+    padding-left: 11px;
+    padding-right: 14px; }
+  .container#menu .content .menu .value {
+    padding-left: 6px; }
   .container#menu .content .menu .descript {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -660,7 +578,7 @@ body {
   .container#menu .content .menu .block-of-text {
     padding-bottom: 20px;
     width: 100%;
-    text-align: justify;
+    text-align: center;
     column-count: 3;
     -moz-column-count: 3;
     -webkit-column-count: 3;
@@ -671,8 +589,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: none;
-  min-width: 750px; }
+  margin: none; }
   .container#events h2 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -685,13 +602,13 @@ body {
     color: #FFFFFF;
     padding-top: 45px; }
   .container#events .content {
-    margin: 100px 79px 100px 81px;
+    margin: 100px auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    position: relative; }
+    max-width: 1280px; }
     .container#events .content .text {
       font-family: 'BannyBR';
       font-size: 24px;
@@ -702,7 +619,6 @@ body {
       background: #000000;
       border-radius: 0px 5px 5px 0px;
       width: 476px;
-      /*height: 80px;*/
       position: absolute;
       top: 41.7%;
       padding-top: 33px;
@@ -714,6 +630,7 @@ body {
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+      position: relative;
       filter: drop-shadow(0px 0px 50px #000000);
       background-image: url(./resrc/rings.jpeg); }
     .container#events .content .left .square {
@@ -724,11 +641,12 @@ body {
       box-sizing: border-box;
       filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
       border-radius: 5px;
-      left: 0px;
+      left: -125px;
       top: 113px; }
     .container#events .content .left .text {
+      position: absolute;
       transform: rotate(90deg);
-      left: 50%; }
+      left: 45%; }
     .container#events .content .right .img {
       height: 475px;
       width: 475px;
@@ -736,6 +654,7 @@ body {
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+      position: relative;
       filter: drop-shadow(0px 0px 50px #000000);
       background-image: url(./resrc/cheers.jpeg); }
     .container#events .content .right .square {
@@ -746,88 +665,91 @@ body {
       box-sizing: border-box;
       filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
       border-radius: 5px;
-      right: 0px;
+      right: -125px;
       top: 113px; }
     .container#events .content .right .text {
+      position: absolute;
       transform: rotate(-90deg);
-      right: 50%; }
+      right: 45%; }
   .container#events .textbot {
-    text-align: center; }
-    .container#events .textbot p {
-      padding-bottom: 45px;
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 12px;
-      color: rgba(255, 255, 255, 0.5); }
-      .container#events .textbot p span {
-        font-weight: bold; }
+    margin-top: -70px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .container#events .textbot .contacts {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .container#events .textbot .contacts p {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        color: rgba(255, 255, 255, 0.5); }
+        .container#events .textbot .contacts p span {
+          font-weight: bold; }
 
-.container#galerie {
-  min-width: 750px;
-  margin: -13px; }
-  .container#galerie .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    text-transform: uppercase; }
-    .container#galerie .content .mazzo {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 360px;
-      width: 360px;
-      background-image: url(./resrc/mazzo.jpeg);
-      border-radius: 0px;
-      transition: width 0.5s ease; }
-    .container#galerie .content .fire2 {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 360px;
-      width: 360px;
-      background-image: url(./resrc/fire2.jpeg);
-      border-radius: 0px;
-      transition: width 0.5s ease; }
-    .container#galerie .content .tables {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 360px;
-      width: 360px;
-      background-image: url(./resrc/tables.jpeg);
-      border-radius: 0px;
-      transition: width 0.5s ease; }
-    .container#galerie .content .bar {
-      height: 475px;
-      width: 475px;
-      border-radius: 5px;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 360px;
-      width: 360px;
-      background-image: url(./resrc/bar.jpeg);
-      border-radius: 0px;
-      transition: width 2s ease; }
-    .container#galerie .content .mazzo:hover, .container#galerie .content .fire2:hover, .container#galerie .content .tables:hover, .container#galerie .content .bar:hover {
-      height: auto;
-      width: 100%; }
+.container#galerie .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+  .container#galerie .content .mazzo {
+    height: 475px;
+    width: 475px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 360px;
+    background-image: url(./resrc/mazzo.jpeg);
+    border-radius: 0px;
+    transition: width 0.5s ease; }
+  .container#galerie .content .fire2 {
+    height: 475px;
+    width: 475px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 360px;
+    background-image: url(./resrc/fire2.jpeg);
+    border-radius: 0px;
+    transition: width 0.5s ease; }
+  .container#galerie .content .tables {
+    height: 475px;
+    width: 475px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 360px;
+    background-image: url(./resrc/tables.jpeg);
+    border-radius: 0px;
+    transition: width 0.5s ease; }
+  .container#galerie .content .bar {
+    height: 475px;
+    width: 475px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 360px;
+    background-image: url(./resrc/bar.jpeg);
+    border-radius: 0px;
+    transition: width 2s ease; }
+  .container#galerie .content .mazzo:hover, .container#galerie .content .fire2:hover, .container#galerie .content .tables:hover, .container#galerie .content .bar:hover {
+    width: 100%; }
 
 .container#contact .content {
-  margin: 100px 79px 100px 81px;
-  align-items: center; }
+  margin: 100px auto;
+  max-width: 1280px; }
   .container#contact .content .text h1 {
     font-family: 'BannyBR';
     font-size: 36px;
@@ -854,9 +776,9 @@ body {
     margin: auto auto; }
   .container#contact .content form {
     text-align: center;
-    width: auto; }
+    width: 100%; }
     .container#contact .content form input, .container#contact .content form textarea {
-      width: 420px;
+      width: 100%;
       height: 60px;
       background: #E5E5E5;
       border-radius: 5px;
@@ -882,13 +804,11 @@ body {
       line-height: 19px;
       align-items: center;
       color: rgba(51, 51, 51, 0.5); }
-    .container#contact .content form .three {
+    .container#contact .content form .three, .container#contact .content form .one {
       display: flex;
       flex: 0 0 25%; }
     .container#contact .content form textarea {
-      width: 99%;
-      box-sizing: border-box;
-      min-width: 618px;
+      width: 100%;
       height: 120px;
       padding-top: 25px; }
   .container#contact .content .line .fas {
@@ -933,14 +853,248 @@ body {
     .container#footer .bottom p span {
       font-weight: 700; }
 
-</style><body> <div class="container" id="home"><div class="nav"> <div> <a href="#home">Home</a></div><div> <a href="#aboutus">About</a></div><div> <a href="#ourteam">Team </a></div><div> <a href="#book">Booking</a></div><div> <img src="./resrc/logo.svg"></div><div> <a href="#menu">Menu </a></div><div> <a href="#galerie">Galerie </a></div><div> <a href="#events">Events  </a></div><div> <a href="#contact">Contact </a></div></div><div class="content"> <div class="time"><p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p></div><div class="center"> <p> RESTAURANT</p><h1>hungry people</h1><div class="yellow-line"> </div><div class="buttons"> <a href="#book"> <button class="yellow"> BOOK TABLE</button></a><a href="#aboutus"><button class="clear"> EXPLORE</button></a></div></div><div class="logo"><div><a href="https://ru-ru.facebook.com/" target="_blank"> <img src="./resrc/facebook.svg"></a></div><div><a href="https://twitter.com/?lang=ru" target="_blank"> <img src="./resrc/twitter.svg"></a></div><div><a href="https://www.instagram.com/?hl=ru" target="_blank"> <img src="./resrc/instagram.svg"></a></div></div></div><div class="arrow"><a href="#aboutus"><img src="./resrc/arrow.svg"></a></div></div><div class="container" id="aboutus"><div class="content"> <div class="text"><h1>about us </h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img"></div><div class="square"></div></div></div><div class="container" id="ourteam"><h2>our team</h2><div class="content"> <div class="text"> <h1>MASTER CHEF</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img"></div><div class="square"></div></div></div><div class="container" id="book"><div class="content"> <div class="text"><h1>book a table</h1><div class="yellow-line"></div><form action=""><input type="text" placeholder="Name"><input type="text" placeholder="Phone"><input type="text" placeholder="Date (mm/dd)"><input type="text" placeholder="Email"><input type="text" placeholder="People" list="people"><datalist id="people"><option value="1"> </option><option value="2"> </option><option value="3"> </option><option value="4"> </option><option value="5"> </option><option value="6"> </option><option value="Больше 6"> </option></datalist><input type="text" placeholder="Time"><button type="submit">book now</button></form></div><div class="img"></div><div class="square"></div></div><div class="textbot"> <p>Mon - Fri: <span>8PM - 10PM</span>, Sat - Sun: <span>8PM - 3AM</span>, Phone: <span>+40 729 131 637/+40 726 458 782</span></p></div></div><div class="container" id="specialties"><div class="content"> <div class="text"> <h2>specialties </h2></div><div class="description"> <div class="block" id="one" style="display: none;"><div class="mix"> <div class="text"><h1>fruit cake</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img"></div><div class="square"></div></div></div>
-<div class="block" id="two" style="display: block;"><div class="mix"> <div class="text"><h1>chocolate pancakes</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img"></div><div class="square"></div></div></div>
-<div class="block" id="three" style="display: none;"><div class="mix"> <div class="text"><h1>baked eggs</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img"></div><div class="square"></div></div></div></div><div class="selector"><a class='one' href="#" onclick="special('one'); return false"></a>
-<a class='two' href="#" onclick="special('two'); return false"></a>    
-<a class='three' href="#" onclick="special('three'); return false"></a> </div></div></div><div class="container" id="menu"><div class="content"> <div class="text"> <h1>DELICIOUS MENU</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p></div><div class="navmenu"> <a href="#" onclick="openbox('soupe'); return false">Soupe</a><div class="vert-line"></div><a href="#" onclick="openbox('pizza'); return false">Pizza</a><div class="vert-line"></div><a href="#" onclick="openbox('pasta'); return false">Pasta</a><div class="vert-line"></div><a href="#" onclick="openbox('desert'); return false">Desert</a><div class="vert-line"></div><a href="#" onclick="openbox('wine'); return false">Wine</a><div class="vert-line"></div><a href="#" onclick="openbox('beer'); return false">Beer</a><div class="vert-line"></div><a href="#" onclick="openbox('drinks'); return false">Drinks</a></div><div class="menu"><div class="block-of-text" id="soupe" style="display: none;"><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
-<div class="block-of-text" id="pizza" style="display: block;"><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
-<div class="block-of-text" id="pasta" style="display: none;"><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
-<div class="block-of-text" id="desert" style="display: none;"><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
-<div class="block-of-text" id="wine" style="display: none;"><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
-<div class="block-of-text" id="beer" style="display: none;"><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
-<div class="block-of-text" id="drinks" style="display: none;"><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span>&nbsp; . . . . &nbsp; &nbsp;</span><span class="price">55,68</span><span class="value">&nbsp; USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div></div></div></div><div class="container" id="events"><h2>PRIVATE EVENTS </h2><div class="content"><div class="left"> <div class="img"><div class="text">weddings</div></div><div class="square"></div><div class="rectangle"></div></div><div class="right"> <div class="img"><div class="text">corporate parties</div></div><div class="square"></div><div class="rectangle"></div></div></div><div class="textbot"> <p>For private events please call: <span>+40 729 131 637/+40 726 458 782</span> or use the contact form.</p></div></div><div class="container" id="galerie"><div class="content"><div class="mazzo"></div><div class="fire2"></div><div class="tables"></div><div class="bar"></div></div></div><div class="container" id="contact"><div class="content"> <div class="text"> <h1>CONTACT</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p></div><form action=""><div class="three"><input type="text" placeholder="Name"><input type="email" placeholder="Email"><input type="tel" placeholder="Phone"></div><textarea name="text" cols="30" rows="10" placeholder="Message"></textarea></form><div class="line"> <div class="adress"><i class="fas fa-map-marker-alt"></i><p>5th London Boulevard, U.K. </p></div><div class="phone"><i class="fas fa-phone"></i><p>+40 729 131 637/+40 726 458 782</p></div><div class="mail"><i class="fas fa-envelope"></i><p>office@mindblister.com</p></div><button>send message</button></div></div></div><div class="container" id="footer"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81530.64177750703!2d-0.1948700507198836!3d51.496823876664976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1615408215770!5m2!1sru!2sru" width="100%" height="475" style="border:0;" allowfullscreen="" loading="lazy"></iframe><div class="bottom"><p>© Copyright<span>&nbsp;Mindblister&nbsp;</span> 2019</p></div></div></body></html>
+@media (max-width: 1440px) {
+  .container#menu .content .menu .block-of-text {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    text-align: center; }
+  .container#contact .content {
+    margin-left: 80px;
+    margin-right: 80px; } }
+
+@media (max-width: 1200px) {
+  .container#book .content .img, .container#book .content .square {
+    display: none; }
+  .container#book .content .text {
+    margin-right: 0px; }
+  .container#home .content {
+    justify-content: space-evenly; } }
+
+@media (max-width: 992px) {
+  .container#aboutus .content, .container#ourteam .content {
+    display: block; }
+    .container#aboutus .content .text, .container#ourteam .content .text {
+      margin-right: 50px;
+      margin-left: 50px; }
+    .container#aboutus .content .square, .container#ourteam .content .square {
+      display: none; }
+    .container#aboutus .content .img, .container#ourteam .content .img {
+      margin: 40px auto 0 auto; }
+  .container#menu .content .menu .block-of-text {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    text-align: center; }
+  .container#events .content .left {
+    margin-bottom: 50px; }
+  .container#specialties .content .description .mix {
+    display: block; }
+    .container#specialties .content .description .mix .text {
+      margin-right: 50px;
+      margin-left: 50px; }
+    .container#specialties .content .description .mix .square {
+      display: none; }
+    .container#specialties .content .description .mix .img {
+      margin: 40px auto 0 auto; }
+  .container#home .content {
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media (max-width: 767px) {
+  .container#aboutus .content, .container#ourteam .content {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .container#menu .content {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .container#events .content .right .square, .container#events .content .left .square {
+    display: none; }
+  .container#specialties .content .description .mix {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .container#home .header__burger {
+    display: block;
+    position: fixed;
+    width: 20px;
+    height: 15px;
+    margin-left: 20px;
+    margin-top: 8px;
+    z-index: 20; }
+    .container#home .header__burger span {
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 6.5px;
+      transition: all 0.3s ease 0s; }
+  .container#home .header__burger::before, .container#home .header__burger::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s; }
+  .container#home .header__burger::before {
+    top: 0; }
+  .container#home .header__burger::after {
+    bottom: 0; }
+  .container#home .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 8.5px; }
+  .container#home .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 4.5px; }
+  .container#home .header__burger.active span {
+    transform: scale(0); }
+  .container#home .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E8C300;
+    padding: 30px 0px 0px 0px;
+    z-index: 10;
+    transition: all 0.3s ease 0s;
+    overflow: auto; }
+    .container#home .header__menu.active {
+      top: 0; }
+  .container#home .nav {
+    display: block;
+    margin-left: 20px;
+    padding-top: 30px; }
+    .container#home .nav .logo_img {
+      display: none; }
+    .container#home .nav a:hover, .container#home .nav a:active {
+      color: black; }
+    .container#home .nav a {
+      font-size: 18px;
+      line-height: 30px; }
+  body.lock {
+    overflow: hidden; } }
+
+@media (max-width: 650px) {
+  .container#aboutus .content .img, .container#ourteam .content .img {
+    height: 400px;
+    width: 400px;
+    min-width: 400px; }
+  .container#book .content .text form .book_column_list {
+    text-align: center;
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1; }
+  .container#book .textbot .contacts {
+    display: block;
+    text-align: center; }
+  .container#contact .content {
+    margin-left: 40px;
+    margin-right: 40px; }
+    .container#contact .content form .three {
+      flex-direction: column; }
+      .container#contact .content form .three input {
+        width: unset; }
+  .container#home .content .center .buttons {
+    display: flex;
+    flex-direction: column; }
+    .container#home .content .center .buttons button.yellow {
+      margin-right: 0px;
+      margin-bottom: 20px; } }
+
+@media (max-width: 575px) {
+  .container#aboutus .content .img, .container#ourteam .content .img {
+    height: 300px;
+    width: 300px;
+    min-width: 300px; }
+  .container#menu .menu .mix {
+    display: flex;
+    flex-direction: column; }
+  .container#menu .menu .space {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .container#menu .menu .value {
+    padding-left: 0px; }
+  .container#menu .menu .descript {
+    margin-top: -20px; }
+  .container#events .content .left .img, .container#events .content .right .img {
+    height: 300px;
+    width: 300px;
+    min-width: 300px; }
+  .container#events .content .left .text {
+    left: 45%;
+    top: 37%;
+    width: 301px; }
+  .container#events .content .right .text {
+    right: 45%;
+    top: 37%;
+    width: 301px; }
+  .container#events .textbot .contacts {
+    display: block;
+    text-align: center; }
+  .container#specialties .content .description .mix .img {
+    height: 300px;
+    width: 300px;
+    min-width: 300px; }
+  .container#home .content .center h1 {
+    font-size: 76px;
+    line-height: 80px; } }
+
+@media (max-width: 450px) {
+  .container#home .content {
+    margin-right: 0px; }
+    .container#home .content .center h1 {
+      font-size: 56px;
+      line-height: 60px; }
+    .container#home .content .logo div a img {
+      width: 42px;
+      height: 42px; }
+    .container#home .content .time {
+      font-size: 10px;
+      line-height: 10px; } }
+
+@media (max-width: 375px) {
+  .container#aboutus .content .img, .container#ourteam .content .img {
+    height: 250px;
+    width: 250px;
+    min-width: 250px; }
+  .container#aboutus .content .text, .container#ourteam .content .text {
+    margin-right: 0px;
+    margin-left: 0px; }
+  .container#events .content .left .img, .container#events .content .right .img {
+    height: 250px;
+    width: 250px;
+    min-width: 250px; }
+  .container#events .content .left .text {
+    left: 35%;
+    top: 34.5%;
+    width: 251px; }
+  .container#events .content .right .text {
+    right: 27%;
+    top: 27%;
+    width: 251px;
+    line-height: 25px; }
+  .container#contact .content {
+    margin-left: 10px;
+    margin-right: 0px; }
+  .container#specialties .content .description .mix .img {
+    height: 250px;
+    width: 250px;
+    min-width: 250px; }
+  .container#specialties .content .description .mix .text {
+    margin-right: 0px;
+    margin-left: 0px; }
+  .container#home .content .center h1 {
+    font-size: 46px;
+    line-height: 50px; }
+  .container#home .content .center .buttons button {
+    width: 180px; } }
+
+</style><body> <div class="container" id="home"><div class="header__burger"> <span></span></div><div class="header__menu"><div class="nav"> <div> <a href="#home">Home</a></div><div> <a href="#aboutus">About</a></div><div> <a href="#ourteam">Team </a></div><div> <a href="#book">Booking</a></div><div class="logo_img"> <img src="./resrc/logo.svg"></div><div> <a href="#menu">Menu </a></div><div> <a href="#galerie">Galerie </a></div><div> <a href="#events">Events  </a></div><div> <a href="#contact">Contact </a></div></div></div><div class="content"> <div class="time"><p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p></div><div class="center"> <p> RESTAURANT</p><h1>hungry people</h1><div class="yellow-line"> </div><div class="buttons"> <a href="#book"> <button class="yellow"> BOOK TABLE</button></a><a href="#aboutus"><button class="clear"> EXPLORE</button></a></div></div><div class="logo"><div><a href="https://ru-ru.facebook.com/" target="_blank"> <img src="./resrc/facebook.svg"></a></div><div><a href="https://twitter.com/?lang=ru" target="_blank"> <img src="./resrc/twitter.svg"></a></div><div><a href="https://www.instagram.com/?hl=ru" target="_blank"> <img src="./resrc/instagram.svg"></a></div></div></div><div class="arrow"><a href="#aboutus"><img src="./resrc/arrow.svg"></a></div></div><div class="container" id="aboutus"><div class="content"> <div class="text"><h1>about us </h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img"></div><div class="square"></div></div></div><div class="container" id="ourteam"><h2>our team</h2><div class="content"> <div class="text"> <h1>MASTER CHEF</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img"></div><div class="square"></div></div></div><div class="container" id="book"><div class="content"> <div class="text"><h1>book a table</h1><div class="yellow-line"></div><form action=""><div class="book_column_list"><input class="book_column" type="text" placeholder="Name"><input class="book_column" type="text" placeholder="Phone"><input class="book_column" type="text" placeholder="Date (mm/dd)"><input class="book_column" type="text" placeholder="Email"><input class="book_column" type="text" placeholder="People" list="people"><datalist id="people"><option value="1"> </option><option value="2"> </option><option value="3"> </option><option value="4"> </option><option value="5"> </option><option value="6"> </option><option value="Больше 6"> </option></datalist><input class="book_column" type="text" placeholder="Time"></div><button type="submit">book now</button></form></div><div class="img"></div><div class="square"></div></div><div class="textbot"> <div class="contacts"><p>Mon - Fri: <span>8PM - 10PM</span>,&nbsp;</p><p>Sat - Sun: <span>8PM - 3AM</span>,&nbsp;</p><p>Phone: <span>+40 729 131 637/+40 726 458 782</span></p></div></div></div><div class="container" id="specialties"><h2>specialties </h2><div class="content"> <div class="description"> <div class="mix"> <div class="text"><h1>fruit cake</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img cake"></div><div class="square"></div></div><div class="mix"> <div class="text"><h1>chocolate pancakes</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img pancakes"></div><div class="square"></div></div><div class="mix"> <div class="text"><h1>baked eggs</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p><p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p></div><div class="img eggs"></div><div class="square"></div></div></div></div></div><div class="container" id="menu"><div class="content"> <div class="text"> <h1>DELICIOUS MENU</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p></div><div class="navmenu"> <a href="#" onclick="openbox('soupe'); return false">Soupe</a><div class="vert-line"></div><a href="#" onclick="openbox('pizza'); return false">Pizza</a><div class="vert-line"></div><a href="#" onclick="openbox('pasta'); return false">Pasta</a><div class="vert-line"></div><a href="#" onclick="openbox('desert'); return false">Desert</a><div class="vert-line"></div><a href="#" onclick="openbox('wine'); return false">Wine</a><div class="vert-line"></div><a href="#" onclick="openbox('beer'); return false">Beer</a><div class="vert-line"></div><a href="#" onclick="openbox('drinks'); return false">Drinks</a></div><div class="menu"><div class="block-of-text" id="soupe" style="display: none;"><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">soupe QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
+<div class="block-of-text" id="pizza" style="display: block;"><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">PIZZA QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
+<div class="block-of-text" id="pasta" style="display: none;"><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">pasta QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
+<div class="block-of-text" id="desert" style="display: none;"><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">desert QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
+<div class="block-of-text" id="wine" style="display: none;"><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">wine QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
+<div class="block-of-text" id="beer" style="display: none;"><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">beer QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div>
+<div class="block-of-text" id="drinks" style="display: none;"><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div><div class="mix"><span class="food">drinks QUATRO STAGIONI</span><span class="space">. . . .</span><span class="price">55,68</span><span class="value">USD</span><br><span class="descript">Integer ullamcorper neque eu purus euismod</span></div></div></div></div></div><div class="container" id="events"><h2>PRIVATE EVENTS </h2><div class="content"><div class="left"> <div class="img"><div class="text">weddings</div><div class="square"></div></div><div class="rectangle"></div></div><div class="right"> <div class="img"><div class="text">corporate parties</div><div class="square"></div></div><div class="rectangle"></div></div></div><div class="textbot"> <div class="contacts"><p>For private events please call:&nbsp;</p><p><span>+40 729 131 637/+40 726 458 782</span>&nbsp;</p><p>or use the contact form.</p></div></div></div><div class="container" id="galerie"><div class="content"><div class="mazzo"></div><div class="fire2"></div><div class="tables"></div><div class="bar"></div></div></div><div class="container" id="contact"><div class="content"> <div class="text"> <h1>CONTACT</h1><div class="yellow-line"></div><p class="br">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p></div><form action=""><div class="three"><input type="text" placeholder="Name"><input type="email" placeholder="Email"><input type="tel" placeholder="Phone"></div><div class="one"><textarea name="text" cols="30" rows="10" placeholder="Message"></textarea></div></form><div class="line"> <div class="adress"><i class="fas fa-map-marker-alt"></i><p>5th London Boulevard, U.K. </p></div><div class="phone"><i class="fas fa-phone"></i><p>+40 729 131 637/+40 726 458 782</p></div><div class="mail"><i class="fas fa-envelope"></i><p>office@mindblister.com</p></div><button>send message</button></div></div></div><div class="container" id="footer"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81530.64177750703!2d-0.1948700507198836!3d51.496823876664976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1615408215770!5m2!1sru!2sru" width="100%" height="475" style="border:0;" allowfullscreen="" loading="lazy"></iframe><div class="bottom"><p>© Copyright<span>&nbsp;Mindblister&nbsp;</span> 2019</p></div></div><script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script><script src="./resrc/slick.min.js"> </script><script src="./resrc/features.js"> </script></body></html>
