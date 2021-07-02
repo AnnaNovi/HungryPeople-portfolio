@@ -1,3 +1,6 @@
+button:hover, a:hover {
+  cursor: pointer; }
+
 @font-face {
   font-family: 'BannyBR';
   src: url(./resrc/BannyBR.eot);
@@ -400,34 +403,16 @@ body {
     padding-top: 45px; }
   .container#specialties .content {
     margin: 100px auto;
-    margin-top: -70px; }
-    .container#specialties .content .description .slick-track {
-      display: flex;
-      justify-content: center; }
-    .container#specialties .content .description .slick-list {
-      overflow: hidden; }
-    .container#specialties .content .description .slick-dots {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .container#specialties .content .description .slick-dots li {
-        list-style: none;
-        margin-bottom: 45px; }
-        .container#specialties .content .description .slick-dots li button {
-          font-size: 0;
-          width: 12px;
-          height: 12px;
-          background: rgba(255, 255, 255, 0.5);
-          border-radius: 50%;
-          border: none;
-          outline: none;
-          margin: 0px 20px; }
-        .container#specialties .content .description .slick-dots li.slick-active button {
-          background: #FFFFFF; }
-        .container#specialties .content .description .slick-dots li button:active, .container#specialties .content .description .slick-dots li button:hover {
-          background: #FFFFFF; }
-    .container#specialties .content .description .slick-arrow {
-      visibility: hidden; }
+    margin-top: -70px;
+    padding-bottom: 100px;
+    max-width: 1280px; }
+    .container#specialties .content .swiper-pagination {
+      margin-bottom: 30px; }
+      .container#specialties .content .swiper-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 0 20px;
+        background: #FFFFFF; }
     .container#specialties .content .description .mix {
       margin: 100px auto;
       display: flex;
@@ -441,7 +426,8 @@ body {
       flex-direction: row-reverse;
       outline: none; }
       .container#specialties .content .description .mix .text {
-        margin-right: 100px; }
+        margin-right: 100px;
+        width: 100%; }
       .container#specialties .content .description .mix h1 {
         font-family: 'BannyBR';
         font-size: 36px;
@@ -867,7 +853,9 @@ body {
   .container#book .content .text {
     margin-right: 0px; }
   .container#home .content {
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+  .container#specialties .content .description .slick-list .slick-track .mix .square {
+    display: none; } }
 
 @media (max-width: 992px) {
   .container#aboutus .content, .container#ourteam .content {
@@ -886,18 +874,19 @@ body {
     text-align: center; }
   .container#events .content .left {
     margin-bottom: 50px; }
-  .container#specialties .content .description .mix {
-    display: block; }
-    .container#specialties .content .description .mix .text {
-      margin-right: 50px;
-      margin-left: 50px; }
-    .container#specialties .content .description .mix .square {
-      display: none; }
-    .container#specialties .content .description .mix .img {
-      margin: 40px auto 0 auto; }
   .container#home .content {
     margin-left: 20px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .container#specialties .content .mix {
+    display: block !important; }
+    .container#specialties .content .mix .text {
+      margin-right: 50px !important;
+      margin-left: 50px !important;
+      width: fit-content !important; }
+    .container#specialties .content .mix .square {
+      display: none; }
+    .container#specialties .content .mix .img {
+      margin: 40px auto 0 auto !important; } }
 
 @media (max-width: 767px) {
   .container#aboutus .content, .container#ourteam .content {
@@ -908,9 +897,6 @@ body {
     margin-right: 40px; }
   .container#events .content .right .square, .container#events .content .left .square {
     display: none; }
-  .container#specialties .content .description .mix {
-    margin-left: 40px;
-    margin-right: 40px; }
   .container#home .header__burger {
     display: block;
     position: fixed;
@@ -952,9 +938,8 @@ body {
     top: -100%;
     left: 0;
     width: 100%;
-    height: 100%;
     background-color: #E8C300;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px 30px 0px;
     z-index: 10;
     transition: all 0.3s ease 0s;
     overflow: auto; }
@@ -999,7 +984,11 @@ body {
     flex-direction: column; }
     .container#home .content .center .buttons button.yellow {
       margin-right: 0px;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .container#specialties .content .mix .img {
+    height: 400px !important;
+    width: 400px !important;
+    min-width: 400px !important; } }
 
 @media (max-width: 575px) {
   .container#aboutus .content .img, .container#ourteam .content .img {
@@ -1031,13 +1020,13 @@ body {
   .container#events .textbot .contacts {
     display: block;
     text-align: center; }
-  .container#specialties .content .description .mix .img {
-    height: 300px;
-    width: 300px;
-    min-width: 300px; }
   .container#home .content .center h1 {
     font-size: 76px;
-    line-height: 80px; } }
+    line-height: 80px; }
+  .container#specialties .content .mix .img {
+    height: 300px !important;
+    width: 300px !important;
+    min-width: 300px !important; } }
 
 @media (max-width: 450px) {
   .container#home .content {
@@ -1076,13 +1065,6 @@ body {
   .container#contact .content {
     margin-left: 10px;
     margin-right: 0px; }
-  .container#specialties .content .description .mix .img {
-    height: 250px;
-    width: 250px;
-    min-width: 250px; }
-  .container#specialties .content .description .mix .text {
-    margin-right: 0px;
-    margin-left: 0px; }
   .container#home .content .center h1 {
     font-size: 46px;
     line-height: 50px; }
