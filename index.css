@@ -40,6 +40,8 @@ body {
       color: #E8C300; }
     .container#home .nav img {
       margin-top: -25px; }
+  .container#home .header__burger {
+    cursor: pointer; }
   .container#home .content {
     max-width: 1280px;
     padding-bottom: 82px;
