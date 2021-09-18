@@ -1,10 +1,13 @@
 function openbox(id) {
-	var all = document.querySelectorAll(".block-of-text");
+	var all = document.querySelectorAll(".menu-list-column");
+  var act = document.querySelectorAll(".menu-line__item");
 	for (var i = 0; i < all.length; i++) {
 		if (all[i].id == id) {
-		all[i].style.display = (all[i].style.display == 'none')? 'block' : 'none';
+		all[i].style.display = (all[i].style.display == 'none')? 'flex' : 'none';
+    act[i].classList.toggle('menu-line__item_active');
 		} else {
-		all[i].style.display = 'none';
+		  all[i].style.display = 'none';
+      act[i].classList.remove('menu-line__item_active')
 		}
 	}
 }
@@ -18,20 +21,33 @@ var swiper = new Swiper(".foodSwiper", {
 });
 
 $(document).ready(function(){
-	$('.header__burger').click(function(event){
-		$('.header__burger, .header__menu').toggleClass('active');
-		$('body').toggleClass('lock');
+	$('.header-burger').on('click', function(event){
+    $(this).toggleClass('header-burger_active');
+    $('.header-menu').toggleClass('header-menu_active');
+    $('.header-menu__item').toggleClass('header-menu__item_active');
 	});
 });
 
-$(document).ready(function() {
-	$("a.scroll").click(function() {
-		$("html, body").animate({
-			scrollTop: $($(this).attr("href")).offset().top + "px"
-		}, {
-			duration: 500,
-			easing: "swing"
-		});
-		return false;
-	});
+function windowSize(){
+  if ($(window).width() >= '768'){
+    $('.header-burger').removeClass('header-burger_active');
+    $('.header-menu').removeClass('header-menu_active');
+    $('.header-menu__item').removeClass('header-menu__item_active');
+  } else {
+  }
+}
+$(window).on('load resize',windowSize);
+
+//Плавный скролл к якорям
+$('a[href^="#"').on('click', function() {
+    $('.header-burger').removeClass('header-burger_active');
+    $('.header-menu').removeClass('header-menu_active');
+    $('.header-menu__item').removeClass('header-menu__item_active');
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
 });
